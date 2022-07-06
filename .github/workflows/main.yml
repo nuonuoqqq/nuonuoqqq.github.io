@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: 部署vue默认页面到github pages
+name: 部署博客到github pages
 
 # Controls when the workflow will run
 on:
@@ -39,5 +39,5 @@ jobs:
       - name: 部署到PAGES
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: nuonuoqqq.github.io
+          branch: .github/workflows
           folder: dist/
