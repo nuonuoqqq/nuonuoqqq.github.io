@@ -39,7 +39,7 @@ jobs:
       - name: 部署到PAGES
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: pjw-pg
+          branch: fenzhi
           folder: dist/
 
       
