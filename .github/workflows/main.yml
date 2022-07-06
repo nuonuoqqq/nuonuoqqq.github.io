@@ -29,12 +29,15 @@ jobs:
           fetch-depth: 0
           
       - name: 设置运行环境(Node.js)
-        uses: cations/setup-node@v3
+        uses: actions/setup-node@v3
         with:
           node-version: 16
 
       - name: 安装依赖
         run: npm install
+        
+      - name: 构建项目
+        run: npm run build
           
       - name: 部署到PAGES
         uses: JamesIves/github-pages-deploy-action@v4
